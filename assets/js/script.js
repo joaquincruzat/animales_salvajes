@@ -155,6 +155,11 @@ async function getAnimales() {
                     
             }
             htmlAnimalesSalvajes (animalesSalvajes);
+
+            selectAnimal.value =" ";
+            inputComentarios.value = " ";
+            selectMostrar.value = " ";
+            selectEdad.value = " ";
         });
        
     })
