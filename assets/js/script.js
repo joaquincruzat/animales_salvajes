@@ -82,7 +82,7 @@ class Aguila extends Animal {
 
 
 async function getAnimales() {
-    const response = await fetch("/animales.json");
+    const response = await fetch("animales.json");
     return await response.json();
 }
 
@@ -111,7 +111,7 @@ async function getAnimales() {
         const filtro = listadoAnimales.find((animal) => animal.name === animalSeleccionado)
 
         //Mostrar imagen de animal
-        const animalFoto = `/assets/imgs/${filtro.imagen}`
+        const animalFoto = `assets/imgs/${filtro.imagen}`
 
         selectMostrar.style.backgroundImage = `url(${animalFoto})`
 
@@ -178,7 +178,7 @@ async function getAnimales() {
 
                 cardBtn.classList.add("btn");
                 cardBtn.classList.add ("btn-secondary");
-                cardBtn.innerHTML = `<img src="/assets/imgs/audio.svg" width="35px" height="35px">` 
+                cardBtn.innerHTML = `<img src="assets/imgs/audio.svg" width="35px" height="35px">` 
 
     //Lógica del modal y el botón de sonido
                 modalImg.addEventListener("click", () =>{
